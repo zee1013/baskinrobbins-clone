@@ -1,0 +1,41 @@
+/* 폰트 적용 */
+@import url('https://cdn.jsdelivr.net/gh/fonts-archive/AppleSDGothicNeo/AppleSDGothicNeo.css');
+/* @font-face {
+    font-family: Scoop;
+    font-weight: 400;
+    font-display: swap;
+    src: local(Scoopbeta Regular), url(../assets/fonts/Scoopbeta-Regular.ttf) format("truetype");
+} */
+
+/* css 연결 */
+@import url(header.css);
+@import url(main-visual.css);
+/* 공통 영역 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: Apple SD Gothic Neo;
+    /* font-family: scoop; */
+    background: url(../img/bg_hero.jpg) repeat;
+    /* background-size: cover; */
+}
+ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+.inner{
+    width: 1500px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #ff5484
+}

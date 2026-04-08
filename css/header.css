@@ -1,0 +1,162 @@
+.header {
+    position: relative;
+  padding: 1% 0;
+  transition: all 0.3s;
+  background-color: transparent;
+  z-index: 999;
+}
+.header-bg{
+    content: "";
+    position: absolute;
+    top: 85px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    /* height: 180px; */
+    height: 0;
+    transition: all 0.5s;
+}
+.header:hover {
+  background-color: #f986bd;
+}
+.menu-list > a:hover .header::after{
+    display: block;
+}
+.header:hover #search::after {
+  background-color: #fff;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-left {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+/* 로고 */
+.header-logo img {
+  width: 100%;
+  display: block;
+}
+/* 메인 메뉴 */
+.menu-list {
+  position: relative;
+  width: 400px;
+  margin-left: 30px;
+  display: flex;
+  gap: 1%;
+}
+.menu-list > li {
+  /* position: relative; */
+  width: calc((100%-4%) / 5);
+
+  text-align: center;
+}
+.menu-list > li > a {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 900;
+  color: #37271f;
+  /* background-color: aliceblue; */
+}
+.header:hover .menu-list>li>a{
+    color: #fff;
+}
+/* 서브 메뉴 */
+.sub-menu {
+  position: absolute;
+  top: 53px;
+  left: 0;
+  /* width: 1300px; */
+  /* margin: 0 auto; */
+  width: 100%;
+  max-width: 1500px;
+  min-width: 1200px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  opacity: 0;
+  visibility: hidden;
+  /* background-color: rgb(199, 144, 43); */
+}
+.sub-menu > li {
+  width: calc((100%-6%) / 7);
+  /* width: 100%; */
+  text-align: left;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+.sub-menu > li > a {
+  width: 100%;
+  padding: 60px 10px;
+  font-size: 22px;
+  color: #000;
+}
+.sub-menu2 {
+  display: flex;
+  padding-top: 10px;
+  /* display: none; */
+}
+.sub-menu2 a {
+position: relative;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #969291;
+}
+/* .sub-menu-store::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 1px;
+    height: 60px;
+    background-color: #d3cfce;
+} */
+/* 메뉴 호버했을 때 서브 메뉴 */
+.menu-list li:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+.menu-list li:hover .sub-menu > li {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* ⭐ 순차 등장 핵심 */
+.sub-menu > li:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.sub-menu > li:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.sub-menu > li:nth-child(3) {
+  transition-delay: 0.3s;
+}
+/* 검색창 / 유저 */
+.search {
+  position: relative;
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+.search img {
+  width: 100%;
+  display: block;
+}
+#search::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -18px;
+  width: 120px;
+  height: 2px;
+  transition: all 0.2s;
+  background-color: #ff4d72;
+}
