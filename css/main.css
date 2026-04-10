@@ -10,6 +10,7 @@
 /* css 연결 */
 @import url(header.css);
 @import url(main-visual.css);
+@import url(footer.css);
 /* 공통 영역 */
 *{
     margin: 0;

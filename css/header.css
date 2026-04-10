@@ -41,7 +41,7 @@ position: fixed;
 }
 /* 로고 */
 .header-logo img {
-  width: 100%;
+  width: 90%;
   display: block;
 }
 /* 메인 메뉴 */

@@ -211,6 +211,7 @@ height: 252px;
 .br-play{
     position: relative;
     /* max-height: 900px; */
+    height: 890px;
     padding: 7% 0;
     background: url(../img/bg_play.jpg);
 }
@@ -225,9 +226,13 @@ height: 252px;
     display: block;
 }
 .br-play .promotion-txt h1, .br-play .promotion-txt p{
+  position: relative;
+  z-index: 99;
     color: #37110e !important;
 }
 .play-img{
+  position: relative;
+  z-index: 99;
     display: flex;
     justify-content: center;
     gap: 1%;
@@ -235,4 +240,98 @@ height: 252px;
 .play-img img{
     width: 100%;
     display: block;
+    
+}
+/* Be better */
+.better-box{
+  position: relative;
+  padding: 5% 0;
+  background-color: #f4e8df;
+}
+.better-img{
+  margin: 0 190px;
+  /* padding: 0 50px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.better-img li{
+  width: calc((100% - 20px) / 2);
+  border-radius: 10px;
+  display: flex;
+  background-color: #fff;
+}
+.better-img img{
+  width: 100%;
+  display: block;
+}
+.better-txt a{
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  display: block;
+
+}
+.better-txt h3{
+  padding-bottom: 5px;
+  font-size: 22px;
+}
+.better-txt p{
+  font-size: 15px;
+  color: #464646;
+}
+.type1 h3{
+      color: #947244;
+}
+.type2 h3{
+  color: #fd565a;
+}
+.type3 h3{
+      color: #00a000;
+}
+/* 배라 베네핏 */
+.benefit-box{
+  padding: 5% 0;
+  background-color: #fff;
+}
+.benefit-swiper .slide-img{
+  border-radius: 10px;
+  overflow: hidden;
+}
+.benefit-list{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 3%;
+  display: flex;
+align-items: flex-start;
+  justify-content: space-between;
+}
+.benefit-list li{
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+.benefit-txt{
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}
+.benefit-txt h2{
+  font-size: 40px;
+  font-weight: 700;
+  color: #ff5484;
+}
+.benefit-txt p{
+  font-size: 14px;
+  color: #858585;
+}
+.txt-store{
+  margin-left: 80px;
+}
+.benefit-img1{
+          margin-top: 24px;
+}
+.benefit-img2{
+      margin-top: -74px;
 }

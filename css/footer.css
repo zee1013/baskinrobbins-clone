@@ -1,0 +1,92 @@
+.footer{
+    padding: 2% 0;
+    background: #1c1b18;
+}
+.footer a, .footer p{
+    font-size: 12px;
+    color: #fff;
+}
+/* 푸터 탑 */
+.top-list{
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333230;
+}
+.top-list li{
+    text-align: center;
+}
+/* 푸터 중앙 */
+.footer-middle{
+    padding: 30px 0;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333230;
+}
+.footer-logo{
+    padding-bottom: 25px;
+}
+.company{
+    line-height: 2;
+}
+.company p{
+    color: #ffffff3b;
+}
+.copy{
+    padding-top: 25px;
+    color: #ffffff80 !important;
+    line-height: 1.1;
+}
+.footer-menu{
+    display: flex;
+    width: 80%;
+}
+.footer-menu h4{
+    padding-bottom: 15px;
+    font-size: 24px;
+    color: #fff3;
+}
+.footer-submenu a{
+    font-size: 15px;
+    line-height: 2;
+}
+.footer-menu>li{
+    width: calc(100% / 6);
+}
+/* 푸터 btm */
+.footer-btm{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btm-left{
+    width: 40%;
+    display: flex;
+}
+.btm-left li{
+    width: calc(100% / 5);
+}
+.btm-left img{
+    width: 70%;
+    display: block;
+}
+.spc, .logo5{
+    width: 40% !important;
+}
+.knoa{
+    width: 28% !important;
+}
+.footer-right{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.family{
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    cursor: pointer;
+}
